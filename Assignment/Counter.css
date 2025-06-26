@@ -1,0 +1,39 @@
+.stats-section {
+    margin: 50px auto;
+    background-color: rgb(236, 238, 237);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 230px;
+    text-align: center;
+}
+
+.stat {
+    color: rgb(122, 12, 12);
+}
+
+.pre-stat {
+    display: flex;
+}
+
+.stat h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.stat span {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 65px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.stat p {
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+    font-weight: 700;
+    letter-spacing: 1px;
+}

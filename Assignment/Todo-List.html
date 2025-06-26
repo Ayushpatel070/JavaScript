@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Todo-List.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <div class="input-section">
+                <input id="todo-input" class="input" type="text" placeholder="Add your todo here...">
+                <button onclick="Addtask()" id="btn add-button" class="btn add-button"><i
+                        class="bx bx-plus bx-sm"></i></button>
+            </div>
+        </header>
+
+        <div class="dlt-buttons">
+            <button onclick="DeleteSelect()" class="btn" id="dlt-selected">DELETE SELECTED</button>
+            <button onclick="DeleteAll()" class="btn" id="dlt-all">DELETE ALL</button>
+        </div>
+
+        <ul id="todo-list">
+
+        </ul>
+    </div>
+
+    <script src="Todo-List.js"></script>
+</body>
+
+</html>
