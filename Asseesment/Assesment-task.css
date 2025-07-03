@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montaga&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: rgb(218, 221, 225);
+    height: 100vh;
+}
+
+.cart {
+    width: 70vw;
+    background: white;
+    margin: 2rem auto;
+    border: 1.5rem solid green;
+}
+
+.Products{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Header{
+    padding: 0.95rem;
+}
+
+.Product {
+    border-top: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem 0.95rem;
+    align-items: center;
+    margin: 0rem 0.75rem;
+}
+
+.Product i {
+    margin: 0rem 0.75rem;
+    color: gray;
+    font-size: 1rem;
+}
+
+.Product img {
+    margin: 0rem 0.75rem;
+    margin-left: 1.5rem;
+}
+
+.Product .details{
+    margin: 0rem 4rem;
+    width: 8rem;
+}
+
+.Product .color {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
+
+.Product .details2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+}
+
+.details2 .quantity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Product .plus {
+    background: rgb(177, 176, 176);
+    padding: 0.25rem 0.35rem;
+    border-radius: 0.25rem;
+}
+
+.Product .minus {
+    background: rgb(177, 176, 176);
+    padding: 0.25rem 0.45rem;
+    border-radius: 0.25rem;
+}
+
+.Product button {
+    border: none;
+    background: white;
+}
+
+
+
