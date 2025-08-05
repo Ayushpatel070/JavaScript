@@ -54,3 +54,15 @@ function Swapimg() {
         return;
     }
 }
+
+let priceInput = document.getElementById('priceInput');
+let priceSelector = document.getElementById('priceSelector');
+
+function select(){
+    const selectedValue = parseInt(priceSelector.value);
+    if (!isNaN(selectedValue)) {
+        priceInput.value = selectedValue * 200;
+    } else {
+        priceInput.value = "";
+    }
+};
