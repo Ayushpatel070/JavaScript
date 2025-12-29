@@ -2,6 +2,8 @@
 let Likebtn1 = document.getElementById("LikeBtn1");
 let Likebtn2 = document.getElementById("LikeBtn2");
 let Likebtn3 = document.getElementById("LikeBtn3");
+let Likebtns = document.querySelectorAll(".fa-heart");
+console.log(Likebtns)
 
 // Product Container.
 let Product1 = document.querySelector(".Product1");
@@ -41,33 +43,45 @@ function dlt3() {
     Product3.style.display = "none";
 }
 
+for(let btn of Likebtns) {
+    btn.addEventListener("click", function(){
+        let currentColor = window.getComputedStyle(this).color;
+        if (currentColor === "rgb(128, 128, 128)") {
+            this.style.color = "red";
+        }
+        else {
+            this.style.color = "gray";
+        }
+    });
+}
+
 // For giving like to the product from the card.
-function like1() {
-    if (Likebtn1.style.color === "gray") {
-        Likebtn1.style.color = "red";
-    }
-    else {
-        Likebtn1.style.color = "gray";
-    }
-}
+// function like1() {
+//     if (Likebtn1.style.color === "gray") {
+//         Likebtn1.style.color = "red";
+//     }
+//     else {
+//         Likebtn1.style.color = "gray";
+//     }
+// }
 
-function like2() {
-    if (Likebtn2.style.color === "gray") {
-        Likebtn2.style.color = "red";
-    }
-    else {
-        Likebtn2.style.color = "gray";
-    }
-}
+// function like2() {
+//     if (Likebtn2.style.color === "gray") {
+//         Likebtn2.style.color = "red";
+//     }
+//     else {
+//         Likebtn2.style.color = "gray";
+//     }
+// }
 
-function like3() {
-    if (Likebtn3.style.color === "gray") {
-        Likebtn3.style.color = "red";
-    }
-    else {
-        Likebtn3.style.color = "gray";
-    }
-}
+// function like3() {
+//     if (Likebtn3.style.color === "gray") {
+//         Likebtn3.style.color = "red";
+//     }
+//     else {
+//         Likebtn3.style.color = "gray";
+//     }
+// }
 
 // Increase the quantity of the products and update the prices.
 function plus1() {

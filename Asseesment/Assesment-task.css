@@ -92,5 +92,8 @@ body {
     background: white;
 }
 
+.fa-heart, .fa-xmark, .plus, .minus {
+    cursor: pointer;
+}
 
 
